@@ -10,7 +10,6 @@
 #include <igl/avg_edge_length.h>
 #include <igl/unproject_onto_mesh.h>
 #include <igl/gaussian_curvature.h>
-// #include <igl/per_face_normals.h>
 #include<igl/ray_mesh_intersect.h>
 
 

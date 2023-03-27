@@ -11,10 +11,10 @@
 #include <igl/unproject_onto_mesh.h>
 #include <igl/gaussian_curvature.h>
 #include<igl/ray_mesh_intersect.h>
+#if defined(_WIN32) || defined(WIN32) 
 #define _USE_MATH_DEFINES
 #include <math.h>
-// #DEFINE M_PI = acos(-1);
-
+#endif
 
 using namespace Eigen; // to use the classes provided by Eigen library
 using namespace std;

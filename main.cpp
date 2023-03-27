@@ -11,7 +11,10 @@
 #include <igl/unproject_onto_mesh.h>
 #include <igl/gaussian_curvature.h>
 #include<igl/ray_mesh_intersect.h>
-
+#if defined(_WIN32) || defined(WIN32) 
+#include <corecrt_math_defines.h>
+M_PI = acos(-1);
+#endif
 
 using namespace Eigen; // to use the classes provided by Eigen library
 using namespace std;
@@ -184,12 +187,7 @@ void draw_segment_app_ridge(int v0, int v1, int v2,
 	proj1.push_back(p01);
 	proj2.push_back(p12);
 	viewer.data().add_edges (p01,p12,RowVector3d(fade,fade,fade));
-	// viewer.data().set_
-	// Draw the line segment // draw edgess
-	// glColor4f(currcolor[0], currcolor[1], currcolor[2], k01);
-	// glVertex3fv(p01);
-	// glColor4f(currcolor[0], currcolor[1], currcolor[2], k12);
-	// glVertex3fv(p12);
+
 }
 
 

@@ -21,7 +21,7 @@ press 3: show the mesh
 
 press 4: color the mesh based on guassian curvature
 
-press 5: color the mesh based on mean of principle curvature
+press 5: color the mesh based on mean of principle curvatures
 
 press 6: increase radius of bounding sphere (invisible) for the camera position
 
